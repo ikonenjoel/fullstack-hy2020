@@ -22,7 +22,7 @@ const Header = (props) => {
   return(
     <p>{props.course}</p>
   )
-
+}
 
 const Content = (props) => {
   console.log(props)
