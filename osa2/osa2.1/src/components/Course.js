@@ -20,14 +20,10 @@ const Content = ({ course }) => {
     exercises.push(part.exercises)
     return <Part key={part.id} name={part.name} exercises={part.exercises} />
   })
-  const totalSum = () => exercises.reduce((sum, exercises) => {
-    return sum + exercises
-  })
 
 return (
     <div>
       <p>{courses()}</p>
-      <p>Total: {totalSum()}</p>
     </div>
   )
 }
